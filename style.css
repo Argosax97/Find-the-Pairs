@@ -1,132 +1,130 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --main-font: Georgia, 'Times New Roman', Times, serif;
+  --main-font: Georgia, "Times New Roman", Times, serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./Images/Texture.jpg);
-    background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 .title {
-    font-family: var(--main-font);
-    margin: 5px;
+  font-family: var(--main-font);
+  margin: 5px;
 }
 
-header>span {
-    font-family: var(--main-font);
-    font-size: 1.5em;
+header > span {
+  font-family: var(--main-font);
+  font-size: 1.5em;
 }
 
 .count {
-    display: inline;
-    font-weight: bold;
+  display: inline;
+  font-weight: bold;
 }
 
 main {
-    width: 80vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    perspective: 1000px;
+  width: 100%;
+  perspective: 1000px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards {
-    background-color: rgb(223, 187, 71);
-    position: relative;
-    text-align: center;
-    border: 1px solid;
-    border-radius: 10px;
-    width: calc(25% - 10px);
-    height: 200px;
-    margin: 5px;
-
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: .5s;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242, 245, 84);
+  position: relative;
+  text-align: center;
+  border: solid;
+  border-radius: 10px;
+  width: 200px;
+  margin: 10px;
+  /* width: calc(25% - 10px); */
+  height: fit-content;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .cards:active {
-    transform: scale(0.97);
-    transition: .2s;
-}
-
-.cards>img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+  transform: scale(0.97);
+  transition: 0.2s;
 }
 
 .flip {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-.front, .back {
-    border-radius: 10px;
-    backface-visibility: hidden;
+.front,
+.back {
+  border-radius: 10px;
+  backface-visibility: hidden;
 }
 
 .front {
-    transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
 }
 
 .winner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    color: white;
-    background-color: rgba(86, 86, 99, 0.8);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(86, 86, 99, 0.8);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
 }
 
 .winner h1 {
-    font-size: 5em;
-    font-family: var(--main-font);
+  font-size: 5em;
+  font-family: var(--main-font);
 }
 
 .winner h2 {
-    font-size: 3em;
-    font-family: var(--main-font);
+  font-size: 3em;
+  font-family: var(--main-font);
 }
 
 .again {
-    padding: 5px 10px;
-    font-size: 2em;
-    background-color: rgb(250, 222, 131);
-    color: rgb(38, 38, 107);
-    border: none;
-    margin: 5px;
-    font-family: var(--main-font);
-    border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 2em;
+  background-color: rgb(250, 222, 131);
+  color: rgb(38, 38, 107);
+  border: none;
+  margin: 5px;
+  font-family: var(--main-font);
+  border-radius: 10px;
 }
 
 .again:hover {
-    background-color: rgb(223, 187, 71);
-    color: rgb(43, 43, 94);
-    box-shadow: 1px 5px 1px rgba(0, 0, 0, .5);
-    cursor: pointer;
+  background-color: rgb(223, 187, 71);
+  color: rgb(43, 43, 94);
+  box-shadow: 1px 5px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .again:active {
-    box-shadow: 1px 2px 1px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
 }

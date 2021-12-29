@@ -1,82 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="./app.js" defer></script>
     <title>Find the Pairs</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <h1 class="title">Memory Game by Simpsons</h1>
-        <span>Moves: <p class="count">0</p></span>
+      <h1 class="title">Memory Game by Simpsons</h1>
+      <span
+        >Moves:
+        <p class="count">0</p></span
+      >
     </header>
 
     <main>
-
-        <div class="cards" data-id="X">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="./Images/bad guy.png">
-        </div>
-        <div class="cards" data-id="X">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="./Images/bad guy.png">
-        </div>
-        <div class="cards" data-id="Z">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="./Images/Bart Cool.png">
-        </div>
-        <div class="cards" data-id="Z">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="./Images/Bart Cool.png">
-        </div>
-        <div class="cards" data-id="C">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="./Images/Beer Guy.png">
-        </div>
-        <div class="cards" data-id="C">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="./Images/Beer Guy.png">
-        </div>
-        <div class="cards" data-id="V">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="/Images/Homer Crazy.png">
-        </div>
-        <div class="cards" data-id="V">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="./Images/Homer Crazy.png">
-        </div>
-        <div class="cards" data-id="B">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="/Images/Homer Pointing.png">
-        </div>
-        <div class="cards" data-id="B">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="./Images/Homer Pointing.png">
-        </div>
-        <div class="cards" data-id="Q">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="./Images/Lisa Sax.png">
-        </div>
-        <div class="cards" data-id="Q">
-             <img class="back" src="/Images/Simpsons.png">
-             <img class="front" src="./Images/Lisa Sax.png">
-        </div>
-
+      <div class="cards" data-id="X">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="./Images/bad guy.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
+      <div class="cards" data-id="X">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="./Images/bad guy.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
+      <div class="cards" data-id="Z">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="./Images/Bart Cool.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
+      <div class="cards" data-id="Z">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="./Images/Bart Cool.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
+      <div class="cards" data-id="C">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="./Images/Beer Guy.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
+      <div class="cards" data-id="C">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="./Images/Beer Guy.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
+      <div class="cards" data-id="V">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="/Images/Homer Crazy.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
+      <div class="cards" data-id="V">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="./Images/Homer Crazy.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
+      <div class="cards" data-id="B">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="/Images/Homer Pointing.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
+      <div class="cards" data-id="B">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="./Images/Homer Pointing.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
+      <div class="cards" data-id="Q">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="./Images/Lisa Sax.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
+      <div class="cards" data-id="Q">
+        <img
+          class="back"
+          src="/Images/Simpsons.png"
+          width="200px"
+          height="220px"
+        />
+        <img
+          class="front"
+          src="./Images/Lisa Sax.png"
+          width="200px"
+          height="220px"
+        />
+      </div>
     </main>
 
-
     <div class="winner">
-        <h1>Congratulations!</h1>
-        <h2>Your score is: <p class="count" id="score">0</p> moves</h2>
-        <button class="again">Go Again</button>
+      <h1>Congratulations!</h1>
+      <h2>
+        Your score is:
+        <p class="count" id="score">0</p>
+        moves
+      </h2>
+      <button class="again">Go Again</button>
     </div>
-
-</body>
-
+  </body>
 </html>
